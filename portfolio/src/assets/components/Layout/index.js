@@ -7,7 +7,7 @@ const Sidebar = () => (
     <div className="nav-bar" to='/'>
         <Link>
             <img src={LogoA} alt="Logo Aditya" />
-            <img src={LogoSubtitle} alt="Logo Subtitle Aditya" />
+            <img className="sub-logo" src={LogoSubtitle} alt="Logo Subtitle Aditya" />
         </Link>
     </div>
 )

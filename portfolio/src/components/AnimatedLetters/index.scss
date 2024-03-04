@@ -1,12 +1,13 @@
 .text-animate {
     display: inline-block;
-    animation: bounceIn 1s 1s;
+    animation: flip 0.5s;
     animation-fill-mode: forwards;
     min-width: 10px;
 
     .text-animate-hover {
         min-width: 10px;
         display: inline-block;
+        animation: bounceIn 0.3s;
         animation-fill-mode: both;
     }
 }

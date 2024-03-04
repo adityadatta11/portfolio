@@ -17,7 +17,6 @@
         font-weight: 400;
 
         &:before {
-            content: '<h1>';
             font-family: 'La Belle Aurore', cursive;
             color: #47411b;
             font-size: 18px;
@@ -28,51 +27,46 @@
         }
 
         &:after {
-            content: '<h1/>';
             font-family: 'La Belle Aurore', cursive;
             color: #47411b;
             font-size: 18px;
             margin-left: 20px;
-            animation: fadeIn 1s 1.7s backwards;
+            animation: bounceIn 1s 1.7s forwards;
             opacity: 0.6;
         }
 
-        img {
-            display: inline-block;
-            position: relative;
-            top: 14px;
-            height: 50px;
-            width: 50px;
-            animation: rotateIn 3s linear both;
+        &:hover {
+            font-size: 69px;
+            font-size-adjust: 30px;
         }
     }
 
     h2 {
-        color: rgb(31, 124, 64);
+        color: rgb(9, 140, 166);
         margin-top: 20px;
         font-weight: 500;
         font-size: 19px;
         font-family: sans-serif;
         letter-spacing: 3px;
-        animation: fadeIn 1.5s 1.5s backwards;
+        animation: bounceIn 1s 1.7s forwards;
+
+        &:hover {
+            font-size: 33px;
+            font-size-adjust: 30px;
+        }
     }
 
     .flat-button {
-        color: rgb(149, 20, 185);
+        color: #321494;
         font-size: 15px;
         font-weight: 500;
         letter-spacing: 4px;
         font-family: sans-serif;
         padding: 10px 30px;
-        border: 1px solid #aaa333;
+        border: 1px solid #321494;
         margin-top: 30px;
         float: left;
         animation: fadeInAnimation 1s 1.5s backwards;
         white-space: nowrap;
-    }
-
-    &:hover {
-        background: #cbc56c;
-        color: #333;
     }
 }
